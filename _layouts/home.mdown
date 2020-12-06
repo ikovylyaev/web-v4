@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+<div class='is-row' style='border-bottom: 4px solid #fff; padding-bottom: 25px; z-index: 100;'>
+    <div class='is-col' style='margin-left: 0px!important;'>
+        <img src='{{ site.url }}/img/logo.svg' alt='kovylyaevdesign logo' style='height: 40px;'>
+    </div>
+    <div class='is-col is-container is-items-middle links-nav' style='text-align: right/1important;'>
+        <b>design</b>
+        <a href='http://video.ikovylyaev.com'>video</a>
+    </div>
+</div>
+<div class='is-row top-line' style='border-bottom: 4px solid #fff; z-index: 100;'>
+    <div class='is-col' style='margin: 0px; padding: 25px 0;'>
+        <img src='{{ site.url }}/img/hello.svg' alt='kovylyaevdesign website - hello' class='hello'>
+    </div>
+    <div class='is-col' style='padding: 25px 0;'>
+        <h3 style='font-weight: 500; font-family: "IBM Plex Sans";'> {{ site.description }}</h3>
+    </div>
+</div>
+
+<div class='post-cont' style='border-bottom: 4px solid #fff;z-index: 100;'>
+    {% for post in site.posts %}
+    <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.jpg'>
+        <div class='is-col is-10'>
+            <p>{{ post.number }}</p>
+        </div>
+        <div class='is-col is-20'>
+            <p>{{ post.categories }}</p>
+        </div>
+        <div class='is-col is-30'>
+            <b>{{ post.title }}</b>
+        </div>
+        <div class='is-col is-20'>
+            <p>{{ post.concept }}</p>
+        </div>
+        <div class='is-col is-10'>
+            {% if post.link == 'null' %}
+                <i>in work</i>
+            {% else %}
+            <a href='{{ post.link }}'>be</a>
+            {% endif %}
+        </div>
+        <div class='is-col is-10'>
+            <p>{{ post.year }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class='bg-post'></div>
+
+<div class='is-row contact' style='z-index: 100; margin-top: 25px;'>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <b>contact</b>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <p style='margin: 0px;'>hi@ikovylyaev.com</p>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+    </div>
+</div>
+<div class='is-row contact' style='z-index: 100;'>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <b>behance</b>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <a href='https://behance.net/ikovylyaev' target='_blank'>ikovylyaev</a>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+    </div>
+</div>
+<div class='is-row contact' style='z-index: 100;'>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <b>vk</b>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <a href='https://vk.com/ikovylyaev' target='_blank'>ikovylyaev</a>
+    </div>
+</div>
+<div class='is-row contact' style='z-index: 100; margin-bottom: 25px;'>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <b>instagram</b>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <a href='https://instagram.com/ikovylyaev' target='_blank'>ikovylyaev</a>
+    </div>
+</div>
+<div class='is-row contact' style='z-index: 100; padding-top: 75px; border-top: 4px solid #fff;'>
+    <div class='is-col' style='margin-left: 0px!important;'>
+        <b>ikovylyaev.com</b>
+    </div>
+    <div class='is-col' style='margin-left: 0px!important; text-align: right;'>
+        <b>design</b>
+        <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video</a>
+        <a href='http://ikovylyaev.com/privacy' style='margin-left: 50px;'>privacy</a>
+    </div>
+</div>
+
+<script src="{{ site.url }}/resources/js/jquery.js"></script>
+<script>
+$(document).ready(function() {
+    console.log("ok");
+  $('.post').on('mouseover', function(){
+    var url = $(this).data('bg');
+    console.log(url);
+    $('.bg-post').css({"background-image": "url("+url+")", "background-size":"cover"});
+  });
+  $('.post').on('mouseleave', function(){
+      $('.bg-post').css({"background-image": "url()", "background-size":"cover"});
+  })
+});
+</script>

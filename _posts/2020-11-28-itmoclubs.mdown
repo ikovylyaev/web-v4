@@ -1,0 +1,11 @@
+---
+title: itmo.clubs
+layout: post
+date: '2020-11-28 20:00:00 +0500'
+categories: ui/ux
+concept: 
+permalink: "/design/itmoclubs/"
+number: "02"
+year: 2020
+link: "null"
+---

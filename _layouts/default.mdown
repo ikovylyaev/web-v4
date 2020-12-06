@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Basic Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Kube CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/resources/css/kube.css">
+    <link rel="stylesheet" href="{{ site.url }}/resources/css/styles.css">
+
+</head>
+<body>
+    {{ content }}
+    <!-- Kube JS (optional if you are using Kube CSS only) -->
+    
+    <script src="{{ site.url }}/resources/js/kube.min.js"></script>
+    <script>
+        $K.init();
+    </script>
+</body>
+</html>
