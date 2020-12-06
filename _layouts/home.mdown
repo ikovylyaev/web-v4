@@ -97,7 +97,7 @@ layout: default
     <div class='is-col' style='margin-left: 0px!important; text-align: right;'>
         <b>design</b>
         <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video</a>
-        <a href='http://ikovylyaev.com/privacy' style='margin-left: 50px;'>privacy</a>
+        <a href='{{ site.url }}/privacy' style='margin-left: 50px;'>privacy</a>
     </div>
 </div>
 
