@@ -1,0 +1,11 @@
+---
+title: recyclica
+layout: post
+date: '2020-11-23 20:00:00 +0500'
+categories: ui/ux
+concept: 
+permalink: "/design/recyclica/"
+number: "06"
+year: 2020
+link: https://www.behance.net/gallery/96708697/recyclica-mobile
+---

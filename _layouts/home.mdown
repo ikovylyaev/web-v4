@@ -22,7 +22,7 @@ layout: default
 
 <div class='post-cont' style='border-bottom: 4px solid #fff;z-index: 100;'>
     {% for post in site.posts %}
-    <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.jpg'>
+    <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.png'>
         <div class='is-col is-10'>
             <p>{{ post.number }}</p>
         </div>
