@@ -1,0 +1,11 @@
+---
+title: sky monitor
+layout: post
+date: '2020-11-22 20:00:00 +0500'
+categories: ui/ux
+concept: concept
+permalink: "/design/sky/"
+number: "07"
+year: 2020
+link: https://www.behance.net/gallery/97486837/sky-monitor-sistema-monitoringa-kachestva-vozduha
+---
