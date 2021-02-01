@@ -7,7 +7,8 @@ layout: default
     </div>
     <div class='is-col is-container is-items-middle links-nav' style='text-align: right!important;'>
         <a href='http://ikovylyaev.com'>design</a>
-        <a href='http://video.ikovylyaev.com'>video</a>
+        <a href='http://video.ikovylyaev.com'>video and photo</a>
+        <a href='http://nature.ikovylyaev.com'>ural</a>
     </div>
 </div>
 <div class='is-row top-line' style='border-bottom: 4px solid #fff; z-index: 100;'>
@@ -50,7 +51,7 @@ layout: default
         <a href='https://vk.com/ikovylyaev' target='_blank'>ikovylyaev</a>
     </div>
 </div>
-<div class='is-row contact' style='z-index: 100; margin-bottom: 25px;'>
+<div class='is-row contact' style='z-index: 100;'>
     <div class='is-col is-33' style='margin-left: 0px!important;'>
     </div>
     <div class='is-col is-33' style='margin-left: 0px!important;'>
@@ -60,13 +61,24 @@ layout: default
         <a href='https://instagram.com/ikovylyaev' target='_blank'>ikovylyaev</a>
     </div>
 </div>
+<div class='is-row contact' style='z-index: 100; margin-bottom: 25px;'>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <b>youtube</b>
+    </div>
+    <div class='is-col is-33' style='margin-left: 0px!important;'>
+        <a href='https://www.youtube.com/channel/UCf9GOVc0qKKPB-Ee3LfH_uw' target='_blank'>ikovylyaev</a>
+    </div>
+</div>
 <div class='is-row contact' style='z-index: 100; padding-top: 75px; border-top: 4px solid #fff;'>
     <div class='is-col' style='margin-left: 0px!important;'>
         <b>ikovylyaev.com</b>
     </div>
     <div class='is-col' style='margin-left: 0px!important; text-align: right;'>
         <a href='http://ikovylyaev.com/privacy'>design</a>
-        <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video</a>
+        <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video and video</a>
+        <a href='http://nature.ikovylyaev.com' style='margin-left: 50px;'>ural</a>
         <b style='margin-left: 50px;'>policy</b>
     </div>
 </div>
