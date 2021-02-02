@@ -18,10 +18,9 @@ layout: default
     </div>
     <div class='is-col' style='padding: 25px 0;'>
         <h3 style='font-weight: 500; font-family: "IBM Plex Sans";'> {{ site.description }}</h3>
-        <h3 style='font-weight: 500; font-family: "IBM Plex Sans";'><a href='http://2020.report.ikovylyaev.com' style='color: #fff; text-decoration: none;'>report 2020</a></h3>
+        <h3 style='font-weight: 500; font-family: "IBM Plex Sans";'><a target="blank" href='http://2020.report.ikovylyaev.com' style='color: #fff; text-decoration: none;'>report 2020</a></h3>
     </div>
 </div>
-
 <div class='post-cont' style='border-bottom: 4px solid #fff;z-index: 100;'>
     {% for post in site.posts %}
     <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.png'>
@@ -41,16 +40,18 @@ layout: default
             {% if post.link == 'null' %}
                 <i>in work</i>
             {% else %}
-            <a href='{{ post.link }}'>be</a>
+            <a target="_blank" href='{{ post.link }}'>be</a>
             {% endif %}
         </div>
         <div class='is-col is-10'>
             <p>{{ post.year }}</p>
         </div>
+        <div class='bg-post' style='background: url("{{site.url}}/img/bg/{{post.number}}.png");background-size: cover;'></div>
     </div>
+    
     {% endfor %}
 </div>
-<div class='bg-post'></div>
+
 
 <div class='is-row contact' style='z-index: 100; margin-top: 25px;'>
     <div class='is-col is-33' style='margin-left: 0px!important;'>
@@ -105,25 +106,25 @@ layout: default
 <div class='is-row contact' style='z-index: 100; padding-top: 75px; border-top: 4px solid #fff;'>
     <div class='is-col' style='margin-left: 0px!important;'>
         <b>ikovylyaev.com</b>
+        <small><a href='{{ site.url }}/privacy' style='margin-left: 50px;'>privacy</a></small>
     </div>
     <div class='is-col' style='margin-left: 0px!important; text-align: right;'>
         <b>design</b>
         <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video and video</a>
         <a href='http://nature.ikovylyaev.com' style='margin-left: 50px;'>ural</a>
-        <a href='{{ site.url }}/privacy' style='margin-left: 50px;'>privacy</a>
+        
     </div>
 </div>
-
+<div class='bg-all'></div>
 <script src="{{ site.url }}/resources/js/jquery.js"></script>
 <script>
 $(document).ready(function() {
-    console.log("ok");
+  $('.bg-post').fadeOut(0);
   $('.post').on('mouseover', function(){
-    var url = $(this).data('bg');
-    $('.bg-post').css({"background-image": "url("+url+")", "background-size":"cover"});
+    $(this).children(".bg-post").fadeIn(300);
   });
   $('.post').on('mouseleave', function(){
-      $('.bg-post').css({"background-image": "url()", "background-size":"cover"});
+      $(this).children(".bg-post").fadeOut(300);
   })
 });
 </script>

@@ -74,11 +74,11 @@ layout: default
 <div class='is-row contact' style='z-index: 100; padding-top: 75px; border-top: 4px solid #fff;'>
     <div class='is-col' style='margin-left: 0px!important;'>
         <b>ikovylyaev.com</b>
+        <small><a href='{{ site.url }}/privacy' style='margin-left: 50px;'>privacy</a></small>
     </div>
     <div class='is-col' style='margin-left: 0px!important; text-align: right;'>
         <a href='http://ikovylyaev.com/privacy'>design</a>
         <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video and video</a>
         <a href='http://nature.ikovylyaev.com' style='margin-left: 50px;'>ural</a>
-        <b style='margin-left: 50px;'>policy</b>
     </div>
 </div>
