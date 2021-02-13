@@ -4,7 +4,7 @@ layout: page
 lang: en
 permalink: "/privacy/"
 ---
-
+<style>p{width: 100%;}</style>
 <h1 class="disply-4 mb-3">{{ page.title }}</h1>
 At ikovylyaev, accessible from ikovylyaev.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by ikovylyaev and how we use it.
 
