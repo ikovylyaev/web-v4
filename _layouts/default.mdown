@@ -24,8 +24,6 @@
     <link rel="manifest" href="{{ site.url }}/img/icon/manifest.json">
     <meta name="msapplication-TileImage" content="{{ site.url }}/img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
-
-    <title>{{ page.title }}</title>
     <!-- Primary Meta Tags -->
     <meta name="title" content="kovylyaevdesign - graphic and ui/ux designer">
     <meta name="description" content="{{ site.description }}">
