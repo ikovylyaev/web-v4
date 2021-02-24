@@ -118,10 +118,19 @@ layout: default
 <div class='bg-all'></div>
 <script src="{{ site.url }}/resources/js/jquery.js"></script>
 <script>
+    var heroArray = [
+    {% for post in site.posts %}
+        "{{site.url}}/img/bg/{{post.number}}.png",
+    {% endfor %}
+    ]
+function preCacheHeros(){
+    $.each(heroArray, function(){
+        var img = new Image();
+        img.src = this;
+    });
+};
 $(document).ready(function() {
-  {% for post in site.posts %}
-    new Image{{post.number}}().src = "{{site.url}}/img/bg/{{post.number}}.png";
-  {% endfor %}
+  preCacheHeros();
   $('.bg-post').fadeOut(0);
   $('.post').on('mouseover', function(){
     $(this).children(".bg-post").fadeIn(300);
