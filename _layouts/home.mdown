@@ -119,6 +119,9 @@ layout: default
 <script src="{{ site.url }}/resources/js/jquery.js"></script>
 <script>
 $(document).ready(function() {
+  {% for post in site.posts %}
+    new Image{{post.number}}().src = "{{site.url}}/img/bg/{{post.number}}.png";
+  {% endfor %}
   $('.bg-post').fadeOut(0);
   $('.post').on('mouseover', function(){
     $(this).children(".bg-post").fadeIn(300);
@@ -126,5 +129,8 @@ $(document).ready(function() {
   $('.post').on('mouseleave', function(){
       $(this).children(".bg-post").fadeOut(300);
   })
+  {% for post in site.posts %}
+  new Image().src = "{{site.url}}/img/bg/{{post.number}}.png";
+  {% endfor %}
 });
 </script>
