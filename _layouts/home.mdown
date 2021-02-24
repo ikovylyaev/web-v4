@@ -23,7 +23,7 @@ layout: default
 </div>
 <div class='post-cont' style='border-bottom: 4px solid #fff;z-index: 100;'>
     {% for post in site.posts %}
-    <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.png'>
+    <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.webp'>
         <div class='is-col is-10'>
             <p>{{ post.number }}</p>
         </div>
@@ -46,7 +46,7 @@ layout: default
         <div class='is-col is-10'>
             <p>{{ post.year }}</p>
         </div>
-        <div class='bg-post' style='background: url("{{site.url}}/img/bg/{{post.number}}.png");background-size: cover;'></div>
+        <div class='bg-post' style='background: url("{{site.url}}/img/bg/{{post.number}}.webp");background-size: cover;'></div>
     </div>
     
     {% endfor %}
@@ -120,7 +120,7 @@ layout: default
 <script>
     var heroArray = [
     {% for post in site.posts %}
-        "{{site.url}}/img/bg/{{post.number}}.png",
+        "{{site.url}}/img/bg/{{post.number}}.webp",
     {% endfor %}
     ]
 function preCacheHeros(){
@@ -138,8 +138,5 @@ $(document).ready(function() {
   $('.post').on('mouseleave', function(){
       $(this).children(".bg-post").fadeOut(300);
   })
-  {% for post in site.posts %}
-  new Image().src = "{{site.url}}/img/bg/{{post.number}}.png";
-  {% endfor %}
 });
 </script>
