@@ -6,6 +6,7 @@ categories: ui/ux
 concept: 
 permalink: "/design/itmoclubs/"
 number: "02"
+img: "02"
 year: 2020
 link: "null"
 ---
