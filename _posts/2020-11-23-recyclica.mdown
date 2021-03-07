@@ -6,6 +6,7 @@ categories: ui/ux
 concept: 
 permalink: "/design/recyclica/"
 number: "06"
+img: "06"
 year: 2020
 link: https://www.behance.net/gallery/96708697/recyclica-mobile
 ---
