@@ -8,8 +8,9 @@ layout: default
     </div>
     <div class='is-col is-container is-items-middle links-nav' style='text-align: right/1important;'>
         <b>design</b>
-        <a href='http://video.ikovylyaev.com'>video and photo</a>
+        <a href='http://video.ikovylyaev.com'>video</a>
         <a href='http://nature.ikovylyaev.com'>ural</a>
+        <a href='http://blog.ikovylyaev.com'>blog</a>
     </div>
 </div>
 <div class='is-row top-line' style='border-bottom: 4px solid #fff; z-index: 100;'>
@@ -52,7 +53,7 @@ layout: default
     {% for post in site.posts offset: 9 %}
     <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.webp'>
         <div class='is-col is-10'>
-            <p>{{ forloop.index1 }}</p>
+            <p>{{ forloop.index }}</p>
         </div>
         <div class='is-col is-20'>
             <p>{{ post.categories }}</p>
@@ -137,9 +138,9 @@ layout: default
     </div>
     <div class='is-col' style='margin-left: 0px!important; text-align: right;'>
         <b>design</b>
-        <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video and video</a>
+        <a href='http://video.ikovylyaev.com' style='margin-left: 50px;'>video</a>
         <a href='http://nature.ikovylyaev.com' style='margin-left: 50px;'>ural</a>
-        
+        <a href='http://blog.ikovylyaev.com' style='margin-left: 50px;'>blog</a>
     </div>
 </div>
 <div class='bg-all'></div>
