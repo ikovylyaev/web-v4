@@ -25,7 +25,7 @@ layout: default
     {% for post in site.posts %}
     <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.webp'>
         <div class='is-col is-10'>
-            <p>{{ post.number }}</p>
+            <p>{{ forloop.index01 }}</p>
         </div>
         <div class='is-col is-20'>
             <p>{{ post.categories }}</p>
@@ -46,7 +46,7 @@ layout: default
         <div class='is-col is-10'>
             <p>{{ post.year }}</p>
         </div>
-        <div class='bg-post' style='background: url("{{site.url}}/img/bg/{{post.number}}.webp");background-size: cover;'></div>
+        <div class='bg-post' style='background: url("{{site.url}}/img/bg/{{post.img}}.webp");background-size: cover;'></div>
     </div>
     
     {% endfor %}
