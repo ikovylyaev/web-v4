@@ -6,6 +6,7 @@ categories: brand
 concept: 
 permalink: "/design/natureexp/"
 number: "08"
+img: "08"
 year: 2020
 link: https://www.behance.net/gallery/90215023/naturalnyj-pohod-logotip-serii-video-iz-pohodov
 ---
