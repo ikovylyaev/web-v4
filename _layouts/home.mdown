@@ -25,7 +25,7 @@ layout: default
     {% for post in site.posts limit: 9 %}
     <div class='is-row post' style='margin: 0px; padding: 25px 0;' data-bg='{{site.url}}/img/bg/{{post.number}}.webp'>
         <div class='is-col is-10'>
-            <p>0{{ forloop.index1 }}</p>
+            <p>0{{ forloop.index }}</p>
         </div>
         <div class='is-col is-20'>
             <p>{{ post.categories }}</p>
